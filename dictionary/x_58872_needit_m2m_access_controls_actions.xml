@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Needit M2m Access Controls Actions" max_length="40" name="x_58872_needit_m2m_access_controls_actions" type="collection">
+        <element label="Access Control" max_length="32" name="access_control" reference="sys_security_acl" type="reference"/>
+        <element label="Action" max_length="32" name="action" reference="ecc_action" type="reference"/>
+        <index name="index">
+            <element name="access_control"/>
+        </index>
+        <index name="index2">
+            <element name="action"/>
+        </index>
+    </element>
+</database>
